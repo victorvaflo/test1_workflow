@@ -1,6 +1,6 @@
-const h1 = document.getElementById('text');
+const h1 = document.getElementById('text')! as HTMLElement;
 
-function changeText(text) {
+function changeText(text: string) {
     return text.split('').reverse().join('');
 }
 
